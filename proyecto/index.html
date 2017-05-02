@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<!-- barra de navegacion-->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color: #212F3D">
+		<div class="container">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+
+	        <div class="navbar-header page-scroll">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+	            </button>
+	            <a style="color: white" class="navbar-brand" href="#page-top">League of legends Gallery</a>
+	        </div>
+
+	       	<!-- esta seccion de la barra de navegacion tiende a convertirse en un boton cuando la pantalla es ddemasiado pequena
+	       		principalmente para celulares con pantalla pequena-->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li class="hidden">
+	                    <a style="color: white" href="index.html"></a>
+	                </li>
+	                <li class="page-scroll">
+	                    <a style="color: white" href="gallery.html">Gallery</a>
+	                </li>
+	                <li class="page-scroll">
+	                    <a style="color: white" href="#review">Review</a>
+	                </li>
+	                <li class="page-scroll">
+	                    <a style="color: white" href="#information">Information</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>	
+
+	<!-- Header de la pagina web donde se tiene la imagen principal y el titulo de la pagina web-->
+	<!-- agregado un poco de style en el mismo archivo para darle un poco de formato para que se visualmente mas bonito-->
+	<header id="page-top"  style="background-color: lightblue">
+		<!-- uso de bootstrap para emplear mejor formato para la imagen principal-->
+	    <div class="container">
+	        <div class="row">
+	        	<!-- margenes cambiados para que se vea mas legible al momento de anadirle color de fondo-->
+	            <div class="col-lg-12" style="text-align: center; margin-top: 100px">
+	                <img class="img-responsive img-circle center-block" src="public/img/principal.jpg" alt="">
+	                <div class="intro-text" style="margin-bottom: 15px">
+	                    <h1 class="name">League of legends Gallery</h1>
+	                    <hr class="star-light">
+	                    <span class="skills">League of legends gallery - Where people can upload their work</span>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+
+	<!-- section destinado a la galeria de imagenes -->
+	<section id="gallery" style="margin-top: 16px">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12 text-center">
+	            	<a href="gallery.html"><h1>Gallery</h1></a>
+	                <hr class="star-primary">
+	            </div>
+	        </div>
+	        <!-- varios divs con la clase row para todas las imagenes mostradas en la pagina principal -->
+	        <div class="row">
+	            <div class="col-sm-4 portfolio-item">
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal1" data-toggle="modal">
+	                    <img src="public/img/gallery/g1.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+	                    <img src="public/img/gallery/g2.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+	                    <img src="public/img/gallery/g3.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	        </div>
+	        <br>
+	        <div class="row">
+	            <div class="col-sm-4 portfolio-item">
+	                
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+	                    <img src="public/img/gallery/g4.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+	                    <img src="public/img/gallery/g5.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	            <div class="col-sm-4 portfolio-item">
+	                
+	            	<!-- cada imagen viene siendo un link a otra pagina, el data-toggle tipo modal hace que la pagina desplegada
+	            		sea de tipo modal, por lo tanto la pagina principal no podra ser modificada mientras la desplegada siga 
+	            		siendo mostrada-->
+	                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+	                    <img src="public/img/gallery/g6.jpg" class="img-responsive img-thumbnail" alt="">
+	                </a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!-- section para las reviews publicadas para la pagina-->
+	<section id="review">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>reviews</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+            	<!--Este form tiene un offset de 2 y un tamano de 8 para que quede centrico y a su vez mas pequeno de lo que deberia-->
+                <div class="col-lg-8 col-lg-offset-2">
+                	<!-- Todo el form para realizar una review agregando un nombre, direccion de correo electronico y el comentario para agregar-->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="message">Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</section>
+
+	<!-- footer simple para agregar informacion de contacto general-->
+	<footer class="text-center" id="information" style="color: white; background-color: #212F3D">
+	    <div class="footer-above">
+	        <div class="container">
+	            <div class="row">
+	                <div class="footer-col col-md-6">
+	                    <h1>Location</h1>
+	                    <p>3481 Melrose Place
+	                        <br>Beverly Hills, CA 90210</p>
+	                </div>
+	                <div class="footer-col col-md-6">
+	                    <h2>About Bootstrap</h2>
+	                    <p>Bootstrap is a free to use, open source framework for CSS. <a href="http://getbootstrap.com/"></a></p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer-below">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    Copyright &copy; Your Website 2016
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+	<!-- Cada uno de estos divs, son ventanas desplegadas al hacer click en cada una de las imagenes anteriores mostradas en la galeria inicial-->
+	<!-- Todos son exactamente lo mismo, son ventanas que permanecen "escondidas" con el aria-hidden, esperando la activacion de un evento onClick
+		en javascript para ser desplegadas de modo "modal"-->
+	<div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Kindred</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g1.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>I created this image for fun, I like Kindred, so, I had a lot of fun drawing her!. I have more drawings in my profile if you want to see!</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal2" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Kindred</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g2.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal3" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lulu</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g3.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal4" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lulu & Veigar</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g4.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal5" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Jinx</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g5.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal6" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ahri</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g6.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal7" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ahri</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g7.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal8" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Orianna</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g8.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" tabindex="-1" id="portfolioModal9" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Quinn</h2>
+                            <hr class="star-primary">
+                            <img src="public/img/gallery/g9.jpg" class="img-responsive img-centered img-thumbnail" alt="">
+                            <p>Una descripcion extra para la imagen</p>
+                            <ul class="list-inline item-details">
+                                <li>Username:
+                                    <strong><a href="#">Username X</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">April 2014</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+</body>
+</html>
+
+<!-- github repository https://github.com/Satoiji/practica11 -->
